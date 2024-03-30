@@ -13,7 +13,8 @@ describe('PostsService', () => {
   });
 
   it('should add a new post', () => {
-    // реализуйте тест-кейс
+    postsService.create(post);
+    expect(postsService.find('2')).toMatchObject(post);
   });
 
   it('should find a post', () => {
