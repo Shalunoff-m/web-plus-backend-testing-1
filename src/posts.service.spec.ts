@@ -18,6 +18,7 @@ describe('PostsService', () => {
   });
 
   it('should find a post', () => {
-    // реализуйте тест-кейс
+    postsService.create(post);
+    expect(postsService.find('2')).toMatchObject(post);
   });
 });
